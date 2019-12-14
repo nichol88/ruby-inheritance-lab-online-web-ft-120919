@@ -4,7 +4,7 @@ class Teacher < User
 
   def teach
     return @knowledge.sample if !@knowledge.empty?
-
+    nil
   end
 
 end
