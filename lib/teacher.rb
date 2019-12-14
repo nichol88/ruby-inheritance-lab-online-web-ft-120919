@@ -4,7 +4,7 @@ class Teacher < User
 
   def teach
     if !@knowledge.empty?
-      self.knowledge.sort_by {rand}[0]
+      KNOWLEDGE.sort_by {rand}[0]
     end
   end
 
